@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Functions  Demo </title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="txtSentence"> Enter Sentence </label>
+      <input type="text" id="txtSentence" name="txtSentence"/>
+
+      </div>
+      <button type="button" onclick="DisplayLength();"> Length  </button>
+      </form>
+      <script>
+        let str = "Please locate where 'locate' occurs!";
+        console.log(str.indexOf("leocate")); 
+        document.getElementById("txtSentence").value="deepak";
+        console.log(document.getElementById("txtSentence").value.toUpperCase());
+      </script>
+      <script src="script.js"> </script>
+  </body>
+</html>

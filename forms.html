@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>
+      Data Entry Form
+    </title>
+    <script>
+      function GetDetails()
+      {
+        // alert("Function is called");
+        var name = document.getElementById("txtName").value;
+        var address = document.getElementById("txtAddress").value;
+        var marks = document.getElementById("txtMarks").value;
+        // alert(name + " " + address + " " + marks);
+        console.log(name + " " + address + " " + marks);
+      }
+    </script>
+  </head>
+  <form>
+    
+  <div>
+     <label for="txtName"> Enter Name  </label>
+    <input type="text" name="txtName" id="txtName" />
+  </div>
+  <div>
+  <label for="txtAddress"> Enter Address  </label>
+    <input type="text" name="txtAddress" id="txtAddress" />
+  </div>
+  <div>
+    <label for="txtMarks"> Enter Marks   </label>
+  
+    <input type="number" name="txtMarks" id="txtMarks" />
+  </div>
+<button type="button" onclick="alert('Button is clicked');"> Submit </button>
+<button type="button" onclick="alert(document.getElementById('txtName').value);"> Click to get Name </button> 
+<button type="button" onclick="GetDetails();"> GetDetails </button> 
+</form>
+</html>

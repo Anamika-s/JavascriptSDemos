@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <title> Arithmetical Operations Demos </title>
+  
+
+     
+   
+</head>
+<body onload="document.getElementById('div1').innerHTML='Its a demo of functions in JS'";">
+  <div id="div1"> Demo </div>
+  <form>
+    <div>
+      <label for="txtNo1"> Enter No 1 </label>
+      <input type="number" name="txtNo1" id="txtNo1"/> 
+    </div>
+    <div>
+      <label for="txtNo2"> Enter No 2 </label>
+      <input type="number" name="txtNo2" id="txtNo2"/> 
+    </div>
+    <div>
+      <label for="txtResult"> Result </label>
+      <input type="number" name="txtResult" id="txtResult"/> 
+    </div>
+    <button type="button" onclick="add();"> Add </button>
+    <button type="button" onclick="subtract();"> Subtract </button>
+    <button type="button" onclick="product();"> Product </button>
+    <button type="button" onclick="divide();"> Divide </button>
+  </form>
+    <script>
+    document.getElementById("div1").innerHTML = "Its a demo";
+    document.getElementById("div1").style.fontSize = "30px";
+    </script>
+     <script src="script.js"></script>
+</body>
+</html>

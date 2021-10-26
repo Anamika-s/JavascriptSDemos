@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Even Odd Demo </title>
+</head>
+<body>
+<form>
+  <div>
+    <label for="txtNo"> Enter Number </label>
+  <input type="number" name="txtNo" id="txtNo"/>
+  </div>
+  <button type="button" onclick="Check();"> Even Or Odd ?</button>
+</form>
+<script>
+  function Check()
+  {
+    var no = parseInt(document.getElementById("txtNo").value);
+     if(no%2==0)
+       console.log("Even");
+    else 
+      console.log("Odd");
+
+  }
+</script>
+</body> 
+</html>
